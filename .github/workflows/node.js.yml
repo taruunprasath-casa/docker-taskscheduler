@@ -54,13 +54,6 @@ jobs:
             sleep 2
           done
 
-      - name: Run database migrations (if any)
-        working-directory: main/app
-        run: |
-          if [ -f "npm run migrate" ]; then
-            npm run migrate
-          fi
-
       - name: Run tests
         working-directory: main/app
         run: npm test
