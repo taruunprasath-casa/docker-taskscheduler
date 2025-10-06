@@ -1,13 +1,13 @@
-    FROM node:lts-alpine
+FROM node:lts-alpine
 
-    WORKDIR /app
+WORKDIR /app
 
-    COPY app/package*.json ./
+COPY app/package*.json ./
 
-    RUN npm install
+RUN npm install
 
-    COPY app/. .
+COPY app/. .
 
-    EXPOSE 3000
+EXPOSE 3000
 
-    CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start"]
