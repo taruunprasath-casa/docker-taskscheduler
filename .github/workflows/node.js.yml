@@ -44,7 +44,7 @@ jobs:
           cache-dependency-path: main/app/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./app
+        working-directory: main/app
         run: npm ci
 
       - name: Wait for PostgreSQL
